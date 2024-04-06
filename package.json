@@ -1,0 +1,45 @@
+{
+  "name": "q-menu",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "packageManager": "yarn@4.1.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type-check build-only",
+    "build-sourcemap": "run-p type-check build-only-sourcemap",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "build-only-sourcemap": "vite build --sourcemap true",
+    "type-check": "vue-tsc --noEmit",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "format": "prettier --write src/"
+  },
+  "dependencies": {
+    "@types/node": "20.x",
+    "naive-ui": "^2.38.1",
+    "pinia": "^2.1.7",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.10.1",
+    "@tsconfig/node20": "^20.1.4",
+    "@vitejs/plugin-basic-ssl": "^1.1.0",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "@vue/eslint-config-prettier": "^9.0.0",
+    "@vue/eslint-config-typescript": "^13.0.0",
+    "@vue/tsconfig": "^0.5.1",
+    "eslint": "^9.0.0",
+    "eslint-plugin-vue": "^9.24.0",
+    "npm-check-updates": "^16.14.18",
+    "npm-run-all2": "^6.1.2",
+    "prettier": "^3.2.5",
+    "rollup-plugin-visualizer": "^5.12.0",
+    "typescript": "~5.4.4",
+    "vite": "^5.2.8",
+    "vite-plugin-html": "^3.2.2",
+    "vue-tsc": "^2.0.10"
+  }
+}

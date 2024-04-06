@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="initial-scale=1,maximum-scale=1, minimum-scale=1, user-scalable=no, width=device-width">
+  <link rel="icon" href="/favicon.png" />
+  <title>Qiao's Network Menu</title>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("/sw.js");
+      });
+    }
+  </script>
+  <style>
+    @font-face {
+      font-family: "Lolita";
+      src:
+        local("Lolita"),
+        url("/fonts/Lolita.woff2") format("woff2"),
+        url("/fonts/Lolita.woff") format("woff"),
+        url("fonts/Lolita.ttf") format("truetype");
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>
+    <strong>请启用 JavaScript</strong>
+  </noscript>
+  <div id="app"></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
