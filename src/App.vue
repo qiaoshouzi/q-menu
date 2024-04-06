@@ -2,14 +2,14 @@
   <n-config-provider :locale="zhCN" :theme="darkTheme">
     <div style="margin: 12px 12px 0 12px">
       <div style="max-width: 1120px; margin: 0 auto">
-        <n-h1
+        <n-h2
           class="siteName"
           :style="{
             'text-align': publicStore.deviceType === 'pc' ? 'start' : 'center',
           }"
         >
           Qiao's Network Menu
-        </n-h1>
+        </n-h2>
         <div style="display: flex; flex-wrap: wrap; gap: 5px">
           <n-button
             v-for="(value, key) in routes"
@@ -39,7 +39,7 @@
 </template>
 
 <script setup lang="ts">
-import { NH1, NText, NButton } from "naive-ui";
+import { NH2, NText, NButton } from "naive-ui";
 import { zhCN, darkTheme, NGlobalStyle, NConfigProvider } from "naive-ui"; // NaiveUI Config
 
 import { usePublicStore } from "./stores";

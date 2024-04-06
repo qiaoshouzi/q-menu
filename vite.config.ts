@@ -8,7 +8,7 @@ import basicSsl from "@vitejs/plugin-basic-ssl";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command }) => {
-  const needSSL: boolean = true;
+  const needSSL: boolean = false;
   return {
     build: {
       // sourcemap: true,
