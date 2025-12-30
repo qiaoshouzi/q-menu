@@ -90,7 +90,7 @@ const routes: Routes = [
   },
   {
     name: "Surge",
-    url: "http://192.168.1.6:6166/web/index.html#/",
+    url: "https://192.168.1.6:6166/web/index.html#/",
   },
 ];
 const others: Routes = [
