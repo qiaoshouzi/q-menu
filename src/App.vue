@@ -92,6 +92,10 @@ const routes: Routes = [
     name: "Surge",
     url: "https://192.168.1.6:6166/web/index.html#/",
   },
+  {
+    name: 'Cloudflare Access',
+    url: "https://cfm-moe.cloudflareaccess.com/"
+  }
 ];
 const others: Routes = [
   {
